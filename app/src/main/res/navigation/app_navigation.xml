@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.pjone.gardeningjournal.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_addPlantsFragment"
+            app:destination="@id/addPlantsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_allPlanetsFragment"
+            app:destination="@id/allPlanetsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addPlantsFragment"
+        android:name="com.pjone.gardeningjournal.fragments.AddPlantsFragment"
+        android:label="fragment_add_plants"
+        tools:layout="@layout/fragment_add_plants" >
+        <action
+            android:id="@+id/action_addPlantsFragment_to_allPlanetsFragment"
+            app:destination="@id/allPlanetsFragment" />
+        <action
+            android:id="@+id/action_addPlantsFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/allPlanetsFragment"
+        android:name="com.pjone.gardeningjournal.fragments.AllPlanetsFragment"
+        android:label="fragment_all_planets"
+        tools:layout="@layout/fragment_all_planets" />
+</navigation>
