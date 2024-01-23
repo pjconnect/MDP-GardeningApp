@@ -50,5 +50,8 @@
         <argument
             android:name="selectedPlant"
             app:argType="com.pjone.gardeningjournal.db.Plant" />
+        <action
+            android:id="@+id/action_updatePlant_to_plantsFragment"
+            app:destination="@id/plantsFragment" />
     </fragment>
 </navigation>

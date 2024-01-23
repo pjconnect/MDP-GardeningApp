@@ -22,8 +22,8 @@ class PlantRepository(application: Application) {
         plantDao.update(plant)
     }
 
-    suspend fun delete(plant: Plant) {
-        plantDao.delete(plant.id)
+    suspend fun delete(plantId: Int) {
+        plantDao.delete(plantId)
     }
 
     fun getPlantById(plantId: Int): LiveData<Plant> {
