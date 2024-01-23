@@ -7,7 +7,7 @@ import com.pjone.gardeningjournal.db.Plant
 import com.pjone.gardeningjournal.db.PlantRepository
 import kotlinx.coroutines.launch
 
-class AddPlantsViewModel(app: Application) : AndroidViewModel(app) {
+class AddPlantsVM(app: Application) : AndroidViewModel(app) {
 
     val repo = PlantRepository(app);
 

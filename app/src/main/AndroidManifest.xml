@@ -16,7 +16,7 @@
             android:name=".MainActivity"
             android:exported="true"
             android:label="My Gardening App"
-            android:theme="@style/Theme.GardeningJournal" >
+            android:theme="@style/Theme.GardeningJournal">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -18,12 +18,11 @@ class HomeFragment : Fragment() {
     ): View {
         binding = FragmentHomeBinding.inflate(layoutInflater)
 
-        binding.button3.setOnClickListener{
+        binding.btnAddPlants.setOnClickListener{
             findNavController().navigate(R.id.action_homeFragment_to_addPlantsFragment)
         }
-
-        binding.button2.setOnClickListener{
-            findNavController().navigate(R.id.action_homeFragment_to_allPlanetsFragment)
+        binding.btnAllPlants.setOnClickListener{
+            findNavController().navigate(R.id.action_homeFragment_to_plantsFragment)
         }
 
         return binding.root
