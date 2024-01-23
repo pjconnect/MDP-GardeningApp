@@ -37,5 +37,18 @@
         <action
             android:id="@+id/action_plantsFragment_to_addPlantsFragment"
             app:destination="@id/addPlantsFragment" />
+        <action
+            android:id="@+id/action_plantsFragment_to_updatePlant"
+            app:destination="@id/updatePlant" />
+    </fragment>
+    <fragment
+        android:id="@+id/updatePlant"
+        android:name="com.pjone.gardeningjournal.fragments.UpdatePlant"
+        android:label="Update Plant"
+        tools:layout="@layout/fragment_update_plant"
+        >
+        <argument
+            android:name="selectedPlant"
+            app:argType="com.pjone.gardeningjournal.db.Plant" />
     </fragment>
 </navigation>
