@@ -1,4 +1,4 @@
-package com.pjone.gardeningjournal.fragments
+package com.pjone.gardeningjournal.fragments.list_view
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

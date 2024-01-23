@@ -19,7 +19,7 @@
     </fragment>
     <fragment
         android:id="@+id/addPlantsFragment"
-        android:name="com.pjone.gardeningjournal.fragments.AddPlantsFragment"
+        android:name="com.pjone.gardeningjournal.fragments.add.AddPlantsFragment"
         android:label="Add Plants"
         tools:layout="@layout/fragment_add_plants" >
         <action
@@ -31,7 +31,7 @@
     </fragment>
     <fragment
         android:id="@+id/plantsFragment"
-        android:name="com.pjone.gardeningjournal.fragments.PlantsFragment"
+        android:name="com.pjone.gardeningjournal.fragments.list_view.PlantsFragment"
         android:label="Plants List"
         tools:layout="@layout/fragment_plants" >
         <action
@@ -43,7 +43,7 @@
     </fragment>
     <fragment
         android:id="@+id/updatePlant"
-        android:name="com.pjone.gardeningjournal.fragments.UpdatePlant"
+        android:name="com.pjone.gardeningjournal.fragments.update.UpdatePlant"
         android:label="Update Plant"
         tools:layout="@layout/fragment_update_plant"
         >

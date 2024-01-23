@@ -1,4 +1,4 @@
-package com.pjone.gardeningjournal.fragments
+package com.pjone.gardeningjournal.fragments.update
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel

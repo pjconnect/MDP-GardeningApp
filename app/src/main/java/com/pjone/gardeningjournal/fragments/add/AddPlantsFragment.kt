@@ -1,4 +1,4 @@
-package com.pjone.gardeningjournal.fragments
+package com.pjone.gardeningjournal.fragments.add
 
 import android.widget.ArrayAdapter
 import android.os.Bundle
