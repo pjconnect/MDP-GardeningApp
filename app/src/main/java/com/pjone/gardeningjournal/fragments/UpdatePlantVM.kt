@@ -15,4 +15,10 @@ class UpdatePlantVM(app: Application) : AndroidViewModel(app) {
         }
     }
 
+    fun updatePlant(plant: Plant){
+        viewModelScope.launch {
+            repo.update(plant)
+        }
+    }
+
 }

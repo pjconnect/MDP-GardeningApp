@@ -7,12 +7,12 @@
     tools:context=".fragments.AddPlantsFragment">
 
     <Button
-        android:id="@+id/btnAdd"
+        android:id="@+id/btnSaveAdd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="28dp"
+        android:layout_marginEnd="20dp"
         android:layout_marginBottom="60dp"
-        android:text="Add Plant"
+        android:text="Save &amp; Add New"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -97,5 +97,15 @@
         android:text="Plant Type"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSaveClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="60dp"
+        android:text="Save &amp; Close"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnSaveAdd" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
