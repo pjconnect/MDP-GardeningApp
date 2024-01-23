@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.pjone.gardeningjournal.R
 import com.pjone.gardeningjournal.databinding.FragmentPlantsBinding
 
@@ -29,6 +30,7 @@ class PlantsFragment : Fragment() {
 
         val adapter = PlantsRecyclerAdapter();
         binding.recyclerView.adapter = adapter;
+        binding.recyclerView.layoutManager = LinearLayoutManager(requireContext())
         vm.plantList.observe(viewLifecycleOwner, Observer { items ->
             adapter.setData(items);
         })
